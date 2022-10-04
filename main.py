@@ -18,8 +18,8 @@ def main():
 
 
         for i in list:
-            if i.m_mass.isnumeric():
-                if int(i.m_mass) > 2900000:
+            if i.mass.isnumeric():
+                if int(i.mass) > 2900000:
                     mass_of_meteor.append(i)
 
 
@@ -31,11 +31,11 @@ def main():
 
 
         for i in mass_of_meteor:
-            print(f'{i.m_name:<24}{i.m_mass:<20}')
+            print(f'{i.name:<24}{i.mass:<20}')
 
         for i in list:
-            if i.m_year.isnumeric():
-                if int(i.m_year) >= 2013:
+            if i.year.isnumeric():
+                if int(i.year) >= 2013:
                     date_of_meteor.append(i)
 
 
@@ -45,7 +45,7 @@ def main():
         print(f'{name_label:<24}{year_label:<20}')
         print('============================================')
         for i in date_of_meteor:
-            print(f'{i.m_name:<24}{i.m_year:<20}')
+            print(f'{i.name:<24}{i.year:<20}')
 
 
 
